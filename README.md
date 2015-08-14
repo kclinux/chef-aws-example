@@ -1,6 +1,6 @@
 # chef-aws-example
-<p>This is a working example of a Chef provisioning using the AWS driver
-Chef-Provisioning was launched in early 2015 and currently leaves a lot to be desired in terms of documentation.  This serves as a working example using this new methodology and is aimed at making it easier (copy/paste even) for exploration into this new build type that represents Infrastructure as Code.  It is a more efficient way of standing up new environments across many different Cloud and other hosting platforms without using the former knife commands to stand up servers individually.  <strong>It is particularly useful for very large environments where running knife commands was previously required to bring up new environments.</strong> 
+<p>This is a working example of Chef provisioning using the AWS driver
+Chef-Provisioning was launched in early 2015 and currently leaves a lot to be desired in terms of documentation.  This serves as a working example using this new methodology and is aimed at making it easier (copy/paste even) for exploration into this new deployment process that represents "Infrastructure as Code".  It is a more efficient way of standing up new environments across many different Cloud and other hosting platforms without using the former knife commands to stand up servers individually.  <strong>It is particularly useful for very large environments where running knife commands was previously required to bring up new environments.</strong> 
 </p>
 
 <p>
