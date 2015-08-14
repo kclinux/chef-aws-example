@@ -12,7 +12,7 @@ Chef-Provisioning was launched in early 2015 and currently leaves a lot to be de
 </p>
 <p>
 <strong>Steps:</strong>
-<li>Provided in this example is also a custom 'all_users' cookbook that gets added to each server.  To use this example cookbook, be sure to review and make appropriate changes to the cookbook.</li>
+<li>Provided in this example is also a custom 'all_users' cookbook that gets added to each server by definition in the servers example data_bag.  To use this example cookbook, be sure to review and make appropriate changes to the cookbook.</li>
 <li>Create a data bag:<br>
 <block>knife data bag create servers</block></li>
 <li>Put your server definition json files in the data bag and add as many as you need.  See data_bags/servers for example</li>
