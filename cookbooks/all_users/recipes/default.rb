@@ -12,16 +12,24 @@
 
  # MANAGE USERS IN THIS GROUP AS DEFINED IN users DATA BAG
  users_manage "admin" do
+  if group_id
+    action [:nothing]
+  else
    # CHANGE THE GROUP_ID FOR YOUR ENVIRONMENT
    group_id 110
    action [ :remove, :create ]
+  end
  end
 
  # MANAGE USERS IN THIS GROUP AS DEFINED IN users DATA BAG
- users_manage "sysadmin" do
-   # CHANGE THE GROUP_ID FOR YOUR ENVIRONMENT
-   group_id 1003 
-   action [ :remove, :create ]
+  users_manage "sysadmin" do
+   if group_id
+     action [:nothing]
+   else
+    # CHANGE THE GROUP_ID FOR YOUR ENVIRONMENT
+    group_id 1003
+    action [ :remove, :create ]
+   end
  end
 
  node.default['authorization']['sudo']['passwordless'] = true
