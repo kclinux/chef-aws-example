@@ -1,13 +1,15 @@
+# THIS IS A WORK IN PROGRESS AND WILL FAIL ON FIRST RUN BUT SHOULD PASS ON SUBSEQUENT RUNS.
+# IT ATTEMPTS TO BUILD ENVIRONMENT SERVERS IN PARRALLEL VIA machine_batch STATEMENTS INSTEAD OF IN SEQUENCE (ONE SERVER AT A TIME).
+
 require "chef/provisioning/aws_driver"
 require "chef/provisioning"
 with_driver "aws"
-
-# MODIFY THESE SETTINGS FOR SERVER,CLIENT and SIGNING_KEY_FILENAME.
 
 with_chef_server "https://api.opscode.com/organizations/YOURORGNAME",
   client_name: 'CLIENT',
   signing_key_filename: '/PATH/TO/CLIENT.pem'
 
+machine_batch "allthethings" do
   data_bag("servers").each do |server|
     opts = data_bag_item("servers", server)
 
@@ -33,4 +35,5 @@ with_chef_server "https://api.opscode.com/organizations/YOURORGNAME",
       run_list opts["run_list"] { ["run_list_name"] } # LOAD RUN LIST
     end
   end
+end
 

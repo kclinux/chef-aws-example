@@ -16,6 +16,10 @@ Chef-Provisioning was launched in early 2015 and currently leaves a lot to be de
 <li>Create a data bag:<br>
 <block>knife data bag create servers</block></li>
 <li>Put your server definition json files in the data bag and add as many as you need.  See data_bags/servers for example</li>
+<li>Upload data bags to server<br>
+<block>knife data bag from file servers data_bags/servers/*<br>
+knife data bag from file users data_bags/users/*</block>
+<li>Modify the provision.rb script to change the Chef Server, Client and SSH Key.  See comments in script.
 <li>Run the provision script with chef-client to build the environment<br>
 <block>chef-client -z scripts/provision.rb</block></li>
 
