@@ -1,0 +1,14 @@
+{
+  "action"   : "create",
+  "id"       : "user1",
+  "uid"	     : "2000",
+  "comment"  : "THIS IS AN ADMIN USER",
+  "home"     : "/home/user1",
+  "groups"   : ["admin", "sysadmin"],
+  "shell": "/bin/bash",
+  "ssh_keys" : [
+    "PUBLIC SSH KEY1","PUBLIC SSH KEY2"
+  ]  
+}
+
+

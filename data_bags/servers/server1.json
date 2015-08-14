@@ -19,6 +19,6 @@
    "Billing": "Internal"
   },
   "is_windows" : "true",
-  "run_list" : ["role[example]", "recipe[all_users]"]
+  "run_list" : ["recipe[all_users]"]
 }
 

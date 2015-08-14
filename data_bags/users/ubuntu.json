@@ -1,0 +1,13 @@
+{
+  "id"       : "ubuntu",
+  "uid"      : "1000",
+  "comment"  : "THIS IS THE BOOTSTRAP USER",
+  "home"     : "/home/ubuntu",
+  "groups"   : ["adm"],
+  "shell": "/bin/bash",
+  "ssh_keys" : [
+    "PUBLIC SSH KEY1","PUBLIC SSH KEY2"
+  ],
+  "action": ["create"]
+}
+
