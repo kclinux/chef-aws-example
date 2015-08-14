@@ -1,0 +1,24 @@
+{
+  "id" : "web1.domain.com",
+  "image_id" : "ami-5189a661",
+  "instance_type" : "t2.micro",
+  "subnet_id" : "subnet-a2ceb7c7",
+  "security_group_ids" : "sg-bd5187d9",
+  "key_name" : "sssb_oregon",
+  "associate_public_ip_address" : "true",
+  "user_data": "",
+  "aws_tags": {
+    "Name": "web1.domain.com",
+    "Company": "COMPANY_NAME",
+    "Project": "PROJECT_NAME",
+    "Description": "DESCRIPTION",
+    "Owner": "Kyle Chrisman",
+    "Requestor": "Kyle Chrisman",
+    "Last Verified": "USER-DATE",
+    "State": "valid",
+   "Billing": "Internal"
+  },
+  "is_windows" : "true",
+  "run_list" : ["role[example]", "recipe[all_users]"]
+}
+
